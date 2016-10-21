@@ -11,7 +11,7 @@ module Bamboo
 
       attr_reader :cookies
 
-      SERVICE = "/rest/api/latest"
+      SERVICE = "/builds/rest/api/latest"
 
       def initialize(http)
         super
