@@ -26,7 +26,8 @@ module Bamboo
                                         :os_password => password
                                         }
                                   )
-        @cookies = {:JSESSIONID => resp['JSESSIONID']}
+        #@cookies = {:JSESSIONID => resp['JSESSIONID']}
+        @cookies = @http.cookies
       end
 
       def plans
